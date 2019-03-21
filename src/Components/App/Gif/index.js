@@ -5,9 +5,13 @@ const Gif = props => {
 
   return (
     <div>
-      <img src={props.image} />
+      <img src={props.image} alt="gif from Giphy"/>
     </div>
   )
 }
+
+Gif.propTypes = {
+  image: PropTypes.string,
+};
 
 export default Gif;

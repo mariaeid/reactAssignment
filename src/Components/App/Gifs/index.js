@@ -34,7 +34,7 @@ class Gifs extends React.Component {
     console.log(this.state.gifs);
     return (
       <div className="imgButtonContainer">
-      <button onClick={() => this.fetchValue(this.state.value)}> Get happy! </button>
+      <button onClick={() => this.fetchValue(this.state.value)}> Get {this.state.value}! </button>
         <div>{this.state.gifs.map((gif, key) => (
           <Gif key={key} image={gif.images.fixed_height.url} />
         ))}

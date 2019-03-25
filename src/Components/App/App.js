@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="main">
-        <Title title="Feeling sad?"/>
+        <Title title="Random mood generator"/>
         <Gifs />
       </div>
     );

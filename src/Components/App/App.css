@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100vh;
@@ -11,30 +11,34 @@
 }
 
 h1 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Bangers', cursive;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  text-shadow: 2px 2px #404040;
+  margin-top: 20%;
 }
 
 .imgButtonContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 button {
-  margin: 15%;
   width: 200px;
   height: 80px;
+  margin: 50px 100px;
   background-color: #078cff;
   color: #fff;
   border: none;
   outline: none;
-  box-shadow: 3px 6px #ff7595;
+  box-shadow: 4px 4px #ff7595;
   border-radius: 10px;
   font-size: 1.3rem;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
   cursor: pointer;
+  text-shadow: .5px .5px #808080;
 }
 
 button:hover {
@@ -42,5 +46,6 @@ button:hover {
 }
 
 img {
+  min-height: 200px;
   border: 2px solid #ddd;
 }

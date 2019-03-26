@@ -6,7 +6,7 @@ class Gifs extends React.Component {
 
   state = {
     gifs: [],
-    value: 'sad'
+    value: 'sad',
   }
 
   componentDidMount() {
@@ -14,8 +14,9 @@ class Gifs extends React.Component {
   };
 
   fetchValue = () => {
-    const mood = ['sad', 'happy', 'angry', 'confused', 'upset', 'laughing', 'clapping', 'flirting', 'tired'];
-    const randomMood = mood[Math.floor(Math.random()*mood.length)];
+    const moods = ['sad', 'happy', 'angry', 'confused', 'upset', 'laughing', 'clapping', 'flirting', 'tired'];
+    const randomMood = moods[Math.floor(Math.random()*moods.length)];
+
     this.setState({
       value: randomMood
     })
@@ -33,14 +34,13 @@ class Gifs extends React.Component {
   }
 
   render() {
-    console.log(this.state.gifs);
     return (
       <div className="imgButtonContainer">
         <div>{this.state.gifs.map((gif, key) => (
           <Gif key={key} image={gif.images.fixed_height.url} />
         ))}
         </div>
-          <button onClick={() => this.fetchValue(this.state.value)}>Change mood! </button>
+          <button className="changeMood" onClick={() => this.fetchValue(this.state.value)}>Change mood!</button>
       </div>
     )
   }

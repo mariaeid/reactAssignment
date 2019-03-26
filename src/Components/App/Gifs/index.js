@@ -40,7 +40,7 @@ class Gifs extends React.Component {
           <Gif key={key} image={gif.images.fixed_height.url} />
         ))}
         </div>
-          <button className="changeMood" onClick={() => this.fetchValue(this.state.value)}>Change mood!</button>
+          <button onClick={() => this.fetchValue(this.state.value)}>Change mood!</button>
       </div>
     )
   }

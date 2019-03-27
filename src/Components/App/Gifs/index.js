@@ -20,7 +20,9 @@ class Gifs extends React.Component {
     this.setState({
       value: randomMood
     })
-    const api = `https://api.giphy.com/v1/gifs/search?api_key=dc5Jl77M8jP12ti5n0Inhx5qi43m6bie&q=${this.state.value}&limit=1`;
+    const apiKey = process.env.REACT_APP_API_KEY;
+    console.log(process.env);
+    const api = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${this.state.value}&limit=1`;
 
     fetch(api)
       .then(res => res.json())

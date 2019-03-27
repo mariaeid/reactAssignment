@@ -42,7 +42,7 @@ button {
   text-shadow: .5px .5px #808080;
 }
 
-.changeMood:hover {
+button:hover {
   box-shadow: 0px 0px #ff7595;
 }
 

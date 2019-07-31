@@ -1,4 +1,4 @@
-Small school assignment. Created in React with call towards Giphy API.
+Small school assignment. Created in React with calls towards Giphy API.
 
 ## Available Scripts
 
@@ -63,10 +63,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# reactAssignment
-School assignment in React
->>>>>>> bfa4001a23c0be1d8bd9cb89c4a95b525a9e6c03
